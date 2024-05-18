@@ -1,7 +1,6 @@
 :host {
   display: block;
   height: 100dvh;
-  width: 100%;
   background-color: var(--color-surface-200);
 }
 
@@ -9,6 +8,7 @@ nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  gap: 1rem;
 
   height: 4rem;
   padding: 0 2rem;
@@ -18,16 +18,21 @@ nav {
 
   .nav-button {
     height: 3rem;
-    width: 5rem;
+    min-width: 5rem;
+    padding: 0 0.5rem;
 
     cursor: pointer;
 
     color: var(--color-primary-500);
     background-color: transparent;
-    border: 1px solid var(--color-primary-200);
+    border: 2px solid var(--color-primary-400);
     border-radius: 8px;
     font-size: 1.5rem;
     font-family: sans-serif;
+
+    &.selected {
+      background-color: var(--color-surface-mixed-200);
+    }
 
     &:hover {
       background-color: var(--color-surface-400);

@@ -1,0 +1,96 @@
+.timeline {
+  position: fixed;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  height: 5rem;
+  width: 100%;
+
+  padding: 0.5rem;
+  background-color: var(--color-surface-300);
+
+  .timeline-bar {
+    position: relative;
+    user-select: none;
+
+    margin: 0 1rem;
+    height: 1rem;
+    background-color: var(--color-surface-400);
+    border-radius: 16px;
+
+    & > * {
+      position: absolute;
+      border-radius: 16px;
+      height: 100%;
+    }
+
+    .timeline-bar-buffer {
+      width: 55%;
+      background-color: var(--color-surface-500);
+      z-index: 1;
+
+      animation: konbCycle 7s ease infinite alternate;
+    }
+
+    .timeline-bar-fill {
+      width: 0%;
+      background-color: var(--color-primary-400);
+      z-index: 2;
+    }
+
+    .timeline-bar-knob {
+      z-index: 3;
+
+      filter: drop-shadow(0 0 0.15rem var(--color-surface-100));
+      cursor: pointer;
+      // animation: konbCycle 7s linear infinite alternate;
+
+      &::after {
+        content: '';
+        position: absolute;
+
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: var(--color-primary-400);
+
+        transform: translate(-50%, -15%);
+        clip-path: polygon(
+          10% 25%,
+          42% 20%,
+          21% 0,
+          78% 0,
+          54% 20%,
+          90% 25%,
+          83% 40%,
+          64% 48%,
+          60% 90%,
+          40% 90%,
+          36% 48%,
+          18% 41%
+        );
+
+        // clip-path: polygon(
+        //   25% 0,
+        //   75% 0,
+        //   60% 20%,
+        //   60% 80%,
+        //   75% 100%,
+        //   25% 100%,
+        //   40% 80%,
+        //   40% 20%
+        // );
+      }
+    }
+  }
+}
+
+@keyframes konbCycle {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}

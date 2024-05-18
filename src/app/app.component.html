@@ -1,2 +1,12 @@
-<nav><button type="button" class="nav-button">test</button></nav>
+<nav>
+  <button
+    *ngFor="let route of routes"
+    type="button"
+    [routerLink]="'/' + route"
+    routerLinkActive="selected"
+    class="nav-button"
+  >
+    {{ route }}
+  </button>
+</nav>
 <router-outlet></router-outlet>
