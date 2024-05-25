@@ -57,10 +57,17 @@
     },
     "@nx/angular:library": {
       "linter": "eslint",
-      "unitTestRunner": "jest"
+      "unitTestRunner": "jest",
+      "standalone": false,
+      "simpleName": true,
+      "prefix": "ar"
     },
     "@nx/angular:component": {
-      "style": "scss"
+      "style": "scss",
+      "skipTests": true,
+      "standalone": false,
+      "export": true,
+      "nameAndDirectoryFormat": "derived"
     }
   },
   "defaultProject": "angular-research"

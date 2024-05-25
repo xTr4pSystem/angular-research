@@ -12,7 +12,5 @@ import { appRoutes } from './app.routes';
 })
 export class AppComponent {
   title = 'angular-research';
-  routes = appRoutes
-    .filter((routes) => !!routes.title)
-    .map(({ title }) => title);
+  routes = appRoutes.filter((routes) => !!routes.title).map(({ title }) => title);
 }

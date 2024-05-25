@@ -1,0 +1,10 @@
+<h1>Graph Builder</h1>
+<h3>Choose Category</h3>
+
+<form [formGroup]="form">
+  <select formControlName="category">
+    @for (category of categories$ | async; track category) {
+    <option [value]="category">{{ category }}</option>
+    }
+  </select>
+</form>

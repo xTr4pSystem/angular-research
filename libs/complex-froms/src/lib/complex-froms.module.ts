@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TimelineComponent } from './timeline/timeline.component';
+import { GraphBuilderComponent } from './graph-builder/graph-builder.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [CommonModule, ReactiveFormsModule],
-  declarations: [TimelineComponent],
+  declarations: [GraphBuilderComponent],
+  exports: [GraphBuilderComponent],
 })
-export class TimelineModule {}
+export class ComplexFromsModule {}

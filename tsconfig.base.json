@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@angular-research/complex-froms": ["libs/complex-froms/src/index.ts"],
       "@angular-research/shared": ["libs/shared/src/index.ts"],
       "@angular-research/timeline": ["libs/timeline/src/index.ts"]
     }
