@@ -67,7 +67,8 @@
       "skipTests": true,
       "standalone": false,
       "export": true,
-      "nameAndDirectoryFormat": "derived"
+      "nameAndDirectoryFormat": "derived",
+      "prefix": "ar"
     }
   },
   "defaultProject": "angular-research"

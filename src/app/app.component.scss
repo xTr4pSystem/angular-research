@@ -26,12 +26,17 @@ nav {
     color: var(--color-primary-500);
     background-color: transparent;
     border: 2px solid var(--color-primary-400);
+    border: none;
     border-radius: 8px;
     font-size: 1.5rem;
     font-family: sans-serif;
 
     &.selected {
       background-color: var(--color-surface-mixed-200);
+
+      &:hover {
+        background-color: var(--color-surface-mixed-100);
+      }
     }
 
     &:hover {
