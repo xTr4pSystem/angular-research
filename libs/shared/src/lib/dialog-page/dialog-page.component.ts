@@ -3,9 +3,10 @@ import { Component, inject } from '@angular/core';
 import { DialogComponent } from '../dialog/dialog.component';
 
 @Component({
-  selector: 'ar-dialog-page',
-  templateUrl: './dialog-page.component.html',
-  styleUrl: './dialog-page.component.scss',
+    selector: 'ar-dialog-page',
+    templateUrl: './dialog-page.component.html',
+    styleUrl: './dialog-page.component.scss',
+    standalone: false
 })
 export class DialogPageComponent {
   dialog = inject(Dialog);

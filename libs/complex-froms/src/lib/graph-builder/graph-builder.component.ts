@@ -3,9 +3,10 @@ import { FormBuilder, FormControl, FormRecord, Validators } from '@angular/forms
 import { GraphBuilderService } from './graph-builder.service';
 
 @Component({
-  selector: 'ar-graph-builder',
-  templateUrl: './graph-builder.component.html',
-  styleUrl: './graph-builder.component.scss',
+    selector: 'ar-graph-builder',
+    templateUrl: './graph-builder.component.html',
+    styleUrl: './graph-builder.component.scss',
+    standalone: false
 })
 export class GraphBuilderComponent {
   categories$ = this.graphBuilderService.getCategories();

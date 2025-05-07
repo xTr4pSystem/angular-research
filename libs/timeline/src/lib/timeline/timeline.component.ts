@@ -3,9 +3,10 @@ import { Component, ElementRef, Inject, NgZone, ViewChild } from '@angular/core'
 import { fromEvent, takeUntil } from 'rxjs';
 
 @Component({
-  selector: 'ar-timeline',
-  templateUrl: './timeline.component.html',
-  styleUrl: './timeline.component.scss',
+    selector: 'ar-timeline',
+    templateUrl: './timeline.component.html',
+    styleUrl: './timeline.component.scss',
+    standalone: false
 })
 export class TimelineComponent {
   @ViewChild('timelineBarKnob')

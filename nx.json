@@ -71,5 +71,6 @@
       "prefix": "ar"
     }
   },
-  "defaultProject": "angular-research"
+  "defaultProject": "angular-research",
+  "useLegacyCache": true
 }
